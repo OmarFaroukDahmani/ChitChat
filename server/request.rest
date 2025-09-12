@@ -1,0 +1,33 @@
+POST http://localhost:8000/sign-up
+Content-Type: application/json
+
+{
+    "name" : "Amen dhahri",
+    "username": "Amen",
+    "email": "a@a.c",
+    "password": "amen"
+}
+
+###
+
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+    "userid" : "a@o.c",
+    "password" : "password"
+}
+
+###
+
+GET http://localhost:8000/getposts
+
+###
+
+POST http://localhost:8000/create
+Content-Type: application/json
+
+{
+  "userid": 2,
+  "content": "Second user second post"
+}
