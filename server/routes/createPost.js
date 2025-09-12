@@ -9,6 +9,7 @@ const createPost = (req, res) => {
     
     res.status(201).json({
       message: "Post created",
+      postId: results.insertId
     });
   });
 };
