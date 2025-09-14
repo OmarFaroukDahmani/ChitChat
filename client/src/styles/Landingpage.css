@@ -1,0 +1,116 @@
+html, body, .navbar, .landing-main, .form input, .submit-btn {
+  transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+
+.landing-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.landing-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: var(--secondary-text);
+  margin-top: 10px;
+}
+
+.landing-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-section {
+  flex: 1;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--text-color);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.toggle-btn.active,
+.toggle-btn:hover {
+  background: var(--button-bg);
+  color: #fff;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: var(--button-bg);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: var(--button-hover);
+}
+
+.message {
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--error-color);
+  min-height: 20px;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+}

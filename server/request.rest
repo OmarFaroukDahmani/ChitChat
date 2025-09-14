@@ -20,7 +20,7 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:8000/getposts
+GET http://localhost:8000/getUsers
 
 ###
 
@@ -31,3 +31,16 @@ Content-Type: application/json
   "userid": 2,
   "content": "Second user second post"
 }
+
+###
+
+PUT http://localhost:8000/posts/3
+Content-Type: application/json
+
+{
+  "content": "second user third post lol :)"
+}
+
+
+###
+DELETE http://localhost:8000/delete/3

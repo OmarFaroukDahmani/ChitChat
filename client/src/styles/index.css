@@ -1,0 +1,44 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🌞 Light Mode Variables */
+:root {
+  --bg-gradient: linear-gradient(135deg, #f9f9f9, #e3e3e3);
+  --text-color: #333;
+  --secondary-text: #555;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --button-bg: #667eea;
+  --button-hover: #5a6dd8;
+  --accent: #ffdd57;
+  --error-color: #e63946;
+}
+
+/* 🌙 Dark Mode Variables */
+[data-theme="dark"] {
+  --bg-gradient: linear-gradient(135deg, #667eea, #764ba2);
+  --text-color: #fff;
+  --secondary-text: #eee;
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --button-bg: #ffdd57;
+  --button-hover: #ffc107;
+  --accent: #ffdd57;
+  --error-color: #ffb3b3;
+}
+
+/* Apply Variables */
+body {
+  background: var(--bg-gradient);
+  color: var(--text-color);
+}

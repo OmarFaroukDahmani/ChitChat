@@ -7,6 +7,7 @@ const getPosts = require('./routes/getposts.js')
 const createPost = require('./routes/createPost.js')
 const editPost = require('./routes/editPost.js');
 const deletePost = require('./routes/deletePost.js')
+const getUsers = require('./routes/getuserbyid.js')
 
 
 const app = express();
@@ -37,6 +38,9 @@ app.put('/posts/:id', editPost);
 
 // delete post
 app.delete('/delete/:id', deletePost );
+
+// get user name by id
+app.get('/getUsers', getUsers) 
 
 // get followers
 

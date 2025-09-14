@@ -1,0 +1,72 @@
+
+/* === Feed Layout === */
+.feed-container {
+  background: var(--bg-color);
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* === Post Card === */
+.post-card {
+  background: var(--card-bg);
+  color: var(--text-color);
+  width: 100%;
+  max-width: 600px;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* === Post Header === */
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .8rem;
+}
+
+.post-username {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* === Post Content === */
+.post-content {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: .5rem;
+}
+
+.post-date {
+  font-size: .85rem;
+  color: gray;
+  text-align: right;
+}
+
+/* === Buttons === */
+.follow-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: .4rem .8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.follow-btn:hover {
+  background: #357abd;
+}
+
+/* === No Posts Message === */
+.no-posts {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
