@@ -7,11 +7,10 @@
   background: var(--card-bg);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
+  margin: 20px 0 30px;
 }
 
-.navbar-logo h1 {
-  font-size: 1.8rem;
+.navbar-logo h2 {
   font-weight: bold;
   color: var(--accent);
 }
@@ -27,6 +26,20 @@
   font-size: 1rem;
   color: var(--text-color);
   transition: color 0.3s;
+}
+
+.navbar-links button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: .4rem .8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.navbar-links button:hover {
+  background: #357abd;
 }
 
 .navbar-links a:hover {
